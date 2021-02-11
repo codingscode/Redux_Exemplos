@@ -1,7 +1,8 @@
 
 http://facebook.github.io/flux/
 
-
+digitar no terminal da pasta:
+     npm i react-redux redux
 
 
 
