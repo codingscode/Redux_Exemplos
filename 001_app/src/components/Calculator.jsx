@@ -16,7 +16,7 @@ function Calculator() {
              <input type="text" placeholder="b" />
 
 
-             <button onClick={() => { window.alert('Clicado') }} >somar</button>
+             <button onClick={() => { dispatch({ type: 'SUM', payload: [4, 3] }) }} >somar</button>
              <button>subtrarir</button>
 
              <div>
