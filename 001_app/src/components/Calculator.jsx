@@ -1,8 +1,14 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { sum } from '../store/Calculator/Calculator.actions'
 
 
-function Calculator({ result }) {
+
+function Calculator() {
+     const dispatch = useDispatch()
+     const result = useSelector((state) => state.calculator)
+
+     
 
      return (
          <div>
@@ -10,7 +16,7 @@ function Calculator({ result }) {
              <input type="text" placeholder="b" />
 
 
-             <button>somar</button>
+             <button onClick={() => { window.alert('Clicado') }} >somar</button>
              <button>subtrarir</button>
 
              <div>
@@ -20,8 +26,6 @@ function Calculator({ result }) {
      )
 }
 
-function mapStateToProps(state) {
-    return { result: state.calculator }
-}
 
-export default connect(mapStateToProps)(Calculator)
+
+export default Calculator
