@@ -5,5 +5,5 @@ digitar no terminal da pasta:
      npm i react-redux redux
 
 
-
+estado global e estado local
 
