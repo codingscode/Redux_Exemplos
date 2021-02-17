@@ -13,8 +13,8 @@ function Calculator() {
 
      return (
          <div>
-             <input type="text" placeholder="a" value={a} onChange={(evento) => setA(Number(evento.target.value))} />
-             <input type="text" placeholder="b" value={b} onChange={(evento) => setB(Number(evento.target.value))} />
+             <input type="number" placeholder="a" value={a} onChange={(evento) => setA(Number(evento.target.value))} />
+             <input type="number" placeholder="b" value={b} onChange={(evento) => setB(Number(evento.target.value))} />
 
 
              <button onClick={() => { dispatch( sum(a, b) ) }} >somar</button>
